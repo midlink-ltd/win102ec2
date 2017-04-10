@@ -9,15 +9,15 @@ So Home wont work.
 
 You can download the trial Enterprise trial here: https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise
 
-#Creating the virtual machine
+# Creating the virtual machine
 
 Use virtualbox to create a new virtual machine, make sure that it uses the VHD format.
 Install the Windows Image onto it.
 Install teamviewer on the virtual machine or enable remote desktop.
 Exit the virtual machine.
 
-#Install and configure awscli
-````bash
+# Install and configure awscli
+```bash
 sudo apt install awscli
 aws configure
 ````
@@ -31,7 +31,7 @@ Default region.
 
 If you set a default region you dont have to specify the region parameter in the following commands.
 
-#Create an S3 bucket
+# Create an S3 bucket
 
 The bucketname must be unique.
 
@@ -39,7 +39,7 @@ The bucketname must be unique.
 aws s3 mb s3://bucketname --region eu-central-1
 ````
 
-#Upload image to s3
+# Upload image to s3
 Move to the folder you store the virtual machine file and upload the virtual image to the s3 bucket.
 
 ````bash
@@ -51,7 +51,7 @@ aws s3 cp myimage.vhd s3://bucketname --region eu-central-1
 
 Create a trust policy in the file trust-policy.json
 
-````json
+```json
 {
    "Version": "2012-10-17",
    "Statement": [
