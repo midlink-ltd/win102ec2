@@ -130,7 +130,7 @@ Replace bucketname and myimage.vhd with your bucket and image name.
 Start to import from S3 to Ec2.
 
 ````bash
-aws ec2 import-image --description "Windows 2008 OVA" --disk-containers file://containers.json
+aws ec2 import-image --description "Windows 2008 OVA" --disk-containers file://containers.json --region eu-central-1
 ````
 
 This may take a while you can check on the status of the import.
