@@ -1,4 +1,4 @@
-#Downloading the image
+# Downloading the image
 
 Download the windows image you want.
 
