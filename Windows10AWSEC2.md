@@ -13,6 +13,7 @@ You can download the trial Enterprise trial here: https://www.microsoft.com/en-u
 
 Use virtualbox to create a new virtual machine, make sure that it uses the VHD format.
 Install the Windows Image onto it.
+Make sure to set a username password combo.
 Install teamviewer on the virtual machine or enable remote desktop.
 Exit the virtual machine.
 
