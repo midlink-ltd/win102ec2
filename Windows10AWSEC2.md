@@ -136,8 +136,12 @@ aws ec2 import-image --description "Windows 2008 OVA" --disk-containers file://c
 
 This may take a while you can check on the status of the import.
 
+
 ````bash
 aws ec2 describe-import-image-tasks --region eu-central-1
 ````
 
-After the AMI is created you can navigate to the EC2 console, select the correct region.
+When the import status is completed you can head to the EC2 console and select the correct region.
+
+
+
