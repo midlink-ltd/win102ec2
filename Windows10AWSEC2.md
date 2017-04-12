@@ -31,6 +31,7 @@ AWS secret access key.
 Default region.
 
 If you set a default region you dont have to specify the region parameter in the following commands.
+Note that P2 instances are only avalible in the US.
 
 # Create an S3 bucket
 
