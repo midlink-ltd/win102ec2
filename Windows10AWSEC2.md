@@ -175,4 +175,4 @@ pass
 # Post Install
 
 Reassign teamviewer to the your teamviewer.
-Download nvidia experiance and downlad a driver.
+Download nvidia experience and download a driver.
