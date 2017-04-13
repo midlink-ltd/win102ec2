@@ -155,8 +155,8 @@ When the import status is completed you can head to the EC2 console and select t
 
 Images -> AMI -> Right click -> Launch
 
-Instance type: g2 (You might have to ask the support for an increase in the g2 limit).
-Security Group: Allow RDP, Teamviewer ports.
+* Instance type: g2 (You might have to ask the support for an increase in the g2 limit).
+* Security Group: Allow RDP, Teamviewer ports.
 
 Instances -> Launch
 
@@ -175,4 +175,4 @@ pass
 # Post Install
 
 Reassign teamviewer to the your teamviewer.
-Download nvidia experience and download a driver.
+Download nvidia experience and install a driver.
