@@ -11,10 +11,13 @@ You can download the trial Enterprise trial here: https://www.microsoft.com/en-u
 
 # Creating the virtual machine
 
-Use virtualbox to create a new virtual machine, make sure that it uses the VHD format.
-Install the Windows Image onto it.
-Make sure to set a username password combo.
-Install teamviewer on the virtual machine or enable remote desktop.
+* Use virtualbox to create a new virtual machine, make sure that it uses the VHD format.
+* Install the Windows 10 image onto it.
+* Make sure to set a username password on the administrator account.
+* Install teamviewer on the virtual machine grant easy access to yourself and check extras->options
+* * General -> Network Settings: Accept Incoming Lan Connections
+* * Security -> Windows logon: Allowed for all users
+
 Exit the virtual machine.
 
 # Install and configure awscli
