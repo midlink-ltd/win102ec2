@@ -13,12 +13,13 @@ You can download the trial Enterprise trial here: https://www.microsoft.com/en-u
 
 * Use virtualbox to create a new virtual machine, make sure that it uses the VHD format.
 * Install the Windows 10 image onto it.
-* Make sure to set a username password on the administrator account.
+* Make sure to set a username password on the administrator account otherwise cannot connect trough remote desktop.
 * Install teamviewer on the virtual machine grant easy access to yourself and check extras->options
    * General -> Network Settings: Accept Incoming Lan Connections
    * Security -> Windows logon: Allowed for all users
 * Start -> Allow remote access to your computer
    * Allow remote connections to this computer
+* Install ec2 configure service http://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/UsingConfig_Install.html
 Restart the virtual machine.
 Wait for windows 10 updates to install.
 Exit the virtual machine.
@@ -165,14 +166,13 @@ Instances -> Right click -> Connect
 
 You download the remote desktop file.
 
-Launch that file with the username and password you set on the original 
-In the form:
+Launch that file with the username and password you set on the original instance.
 
+In the form:
 .\Username
 pass
 
 # Post Install
 
+Reassign teamviewer to the your teamviewer.
 Download nvidia experiance and downlad a driver.
-
-
