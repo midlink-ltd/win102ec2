@@ -19,6 +19,8 @@ You can download the trial Enterprise trial here: https://www.microsoft.com/en-u
    * Security -> Windows logon: Allowed for all users
 * Start -> Allow remote access to your computer
    * Allow remote connections to this computer
+Restart the virtual machine.
+Wait for windows 10 updates to install.
 Exit the virtual machine.
 
 # Install and configure awscli
@@ -133,10 +135,10 @@ Replace bucketname and myimage.vhd with your bucket and image name.
 [{ "Description": "Windows 10 Base Install", "Format": "vhd", "UserBucket": { "S3Bucket": "bucketname", "S3Key": "myimage.vhd" } }]
 ````
 
-Start to import from S3 to Ec2.
+# Create EC2 AMI from S3 VHD image
 
 ````bash
-aws ec2 import-image --description "Windows 2008 OVA" --disk-containers file://containers.json --region eu-central-1
+aws ec2 import-image --description "Windows 10" --disk-containers file://containers.json --region eu-central-1
 ````
 
 This may take a while you can check on the status of the import.
@@ -147,6 +149,27 @@ aws ec2 describe-import-image-tasks --region eu-central-1
 ````
 
 When the import status is completed you can head to the EC2 console and select the correct region.
+
+# Create EC2 instance from AMI
+
+Images -> AMI -> Right click -> Launch
+
+Instance type: g2 (You might have to ask the support for an increase in the g2 limit).
+Security Group: Allow RDP, Teamviewer ports.
+
+Instances -> Launch
+
+# Running the instance
+
+Instances -> Right click -> Connect
+
+You download the remote desktop file.
+
+Launch that file with the username and password you set on the original 
+In the form:
+
+.\Username
+pass
 
 
 
