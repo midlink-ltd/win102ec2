@@ -11,7 +11,7 @@ You can download the trial Enterprise trial here: https://www.microsoft.com/en-u
 
 # Creating the virtual machine
 
-* Use virtualbox to create a new virtual machine, make sure that it uses the VHD format.
+* Use virtualbox to create a new virtual machine, make sure that it uses the VHD format (The OS is 20 gigabyte).
 * Install the Windows 10 image onto it.
 * Make sure to set a username password on the administrator account otherwise cannot connect trough remote desktop.
 * Install teamviewer on the virtual machine grant easy access to yourself and check extras->options
@@ -20,9 +20,9 @@ You can download the trial Enterprise trial here: https://www.microsoft.com/en-u
 * Start -> Allow remote access to your computer
    * Allow remote connections to this computer
 * Install ec2 configure service http://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/UsingConfig_Install.html
-Restart the virtual machine.
-Wait for windows 10 updates to install.
-Exit the virtual machine.
+* Restart the virtual machine.
+* Wait for windows 10 updates to install.
+* Exit the virtual machine.
 
 # Install and configure awscli
 ```bash
