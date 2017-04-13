@@ -171,5 +171,8 @@ In the form:
 .\Username
 pass
 
+# Post Install
+
+Download nvidia experiance and downlad a driver.
 
 
