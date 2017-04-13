@@ -15,10 +15,10 @@ You can download the trial Enterprise trial here: https://www.microsoft.com/en-u
 * Install the Windows 10 image onto it.
 * Make sure to set a username password on the administrator account.
 * Install teamviewer on the virtual machine grant easy access to yourself and check extras->options
-** General -> Network Settings: Accept Incoming Lan Connections
-** Security -> Windows logon: Allowed for all users
+   * General -> Network Settings: Accept Incoming Lan Connections
+   * Security -> Windows logon: Allowed for all users
 * Start -> Allow remote access to your computer
-**Allow remote connections to this computer
+   * Allow remote connections to this computer
 Exit the virtual machine.
 
 # Install and configure awscli
