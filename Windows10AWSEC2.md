@@ -46,7 +46,7 @@ Note that P2 instances are only avalible in the US.
 The bucketname must be unique.
 
 ````bash
-aws s3 mb s3://bucketname --region eu-central-1
+aws s3 mb s3://peterforgacs --region eu-central-1
 ````
 
 # Upload image to s3
@@ -54,7 +54,7 @@ Move to the folder you store the virtual machine file and upload the virtual ima
 
 ````bash
 cd myvmfolder
-aws s3 cp myimage.vhd s3://bucketname --region eu-central-1
+aws s3 cp codexaws.vhd s3://peterforgacs --region eu-central-1
 ````
 
 # Configuration files
@@ -134,7 +134,7 @@ Create a configuration file on your computer called containers.json.
 Replace bucketname and myimage.vhd with your bucket and image name.
 
 ````json
-[{ "Description": "Windows 10 Base Install", "Format": "vhd", "UserBucket": { "S3Bucket": "bucketname", "S3Key": "myimage.vhd" } }]
+[{ "Description": "Windows 10 Base Install", "Format": "vhd", "UserBucket": { "S3Bucket": "peterforgacs", "S3Key": "codexaws.vhd" } }]
 ````
 
 # Create EC2 AMI from S3 VHD image
